@@ -1,0 +1,10 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<p>Create a new Alligator</p>
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+</form>
+<button type="submit">Save</button>
+{% endblock %}
